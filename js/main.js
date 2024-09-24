@@ -382,7 +382,8 @@ function initTextRotate(rotateElement) {
 	var toRotate = rotateElement.getAttribute('data-rotate');
     var period = rotateElement.getAttribute('data-period');
     
-    if (toRotate) {
+    if (toRotate)
+	{
         new TxtRotate(rotateElement.querySelector('.wrap'), JSON.parse(toRotate), period);
     }
 }
