@@ -46,6 +46,12 @@
 					</li>
 					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+					<li class="nav-item">
+						<select id="language-selector" class="form-control">
+							<option value="ko">한국어</option>
+							<option value="jp">日本語</option>
+						</select>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -57,10 +63,10 @@
 				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 					<div class="text text-center">
 						<span class="subheading">Hey! I am</span>
-						<h1>HongSongUi(ホンソンイ)</h1>
-						<h2>I'm a
-							<span class="txt-rotate" data-period="500"
-								data-rotate='[  "ゲームプログラマー", "アンリアル開発者"]'></span>
+						<h1 id = "name">홍송의</h1>
+						<h2 >I'm a
+							<span id = 'subtitle' class="txt-rotate" data-period="500"
+								data-rotate='[ ]'></span>
 						</h2>
 					</div>
 				</div>
@@ -107,7 +113,7 @@
 							</p>
 							<p><a target="_blank"
 								href="https://github.com/HongSongUi"
-								class="btn btn-primary py-3 px-3">Github</a>
+								class="icon-github">Github</a>
 								<a target="_blank"
 									href="https://drive.google.com/file/d/1uJg0Yun35HWc4YsEKfEX5L6Uyik5MPl_/view?usp=sharing"
 									class="btn btn-primary py-3 px-3">이력서 다운받기</a>
@@ -704,7 +710,7 @@
 			</div>
 
 			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
 					<div class="align-self-stretch box text-center p-4 shadow">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="icon-map-signs"></span>
@@ -715,7 +721,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
 					<div class="align-self-stretch box text-center p-4 shadow">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="icon-phone2"></span>
@@ -726,18 +732,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
 					<div class="align-self-stretch box text-center p-4 shadow">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="icon-paper-plane"></span>
 						</div>
 						<div>
 							<h3 class="mb-4">Email Address</h3>
-							<p><a href="mailto:info@yoursite.com">cookie00421@gmail.com</a></p>
+							<p><a href="mailto:info@yoursite.com">thddml40@gmail.com</a></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<!--<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box text-center p-4 shadow">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="icon-globe"></span>
@@ -747,7 +753,7 @@
 							<p><a href="#">yoursite.com</a></p>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 
 		</div>
@@ -796,6 +802,7 @@
 	<script src="js/scrollax.min.js"></script>
 
 	<script src="js/main.js"></script>
+	<!--<script src="js/Translate_lang.js"></script>-->
 
 </body>
 

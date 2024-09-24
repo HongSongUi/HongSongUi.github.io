@@ -1,3 +1,7 @@
+
+
+
+
  AOS.init({
  	duration: 800,
  	easing: 'slide'
@@ -330,21 +334,74 @@ TxtRotate.prototype.tick = function() {
   }, delta);
 };
 
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+const translations = {
+    ko: {
+        name: '홍송의',
+        rotateTexts: ['게임 프로그래머' , '언리얼 개발자']
+      /*  home: '홈',
+        about: '소개',
+        education: '학력',
+        projects: '프로젝트',
+        sideProjects: '사이드 프로젝트',
+        blog: '내 블로그',
+        contact: '연락처'*/
+    },
+    jp: {
+        name: 'ホンソンイ',
+        rotateTexts: ['ゲームプログラマー', 'アンリアル開発者']
+      /*  home: 'ホーム',
+        about: '私について',
+        education: '学歴',
+        projects: 'プロジェクト',
+        sideProjects: 'サイドプロジェクト',
+        blog: 'ブログ',
+        contact: 'コンタクト'*/
     }
-  }
+};
+const languageSelector = document.getElementById('language-selector');
+
+function changeLanguage(language) {
+    document.getElementById('name').textContent = translations[language].name;
+
+	const  rotateElement = document.getElementById('subtitle');
+    rotateElement.setAttribute('data-rotate', JSON.stringify(translations[language].rotateTexts));
+	resetTxtRotate(rotateElement);
+	initTextRotate(rotateElement);
+}
+
+function resetTxtRotate(rotateElement) {
+    // 기존의 텍스트를 지우기
+    rotateElement.innerHTML = '';
+
+    // 새로운 랩 요소를 추가
+    const wrap = document.createElement('span');
+    wrap.className = 'wrap';
+    rotateElement.appendChild(wrap);
+}
+function initTextRotate(rotateElement) {
+	var toRotate = rotateElement.getAttribute('data-rotate');
+    var period = rotateElement.getAttribute('data-period');
+    
+    if (toRotate) {
+        new TxtRotate(rotateElement.querySelector('.wrap'), JSON.parse(toRotate), period);
+    }
+}
+window.onload = function() {
+	changeLanguage(languageSelector.value || 'ko');
+	//initTextRotate();
+
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+languageSelector.addEventListener('change', (e) => {
+    const selectedLanguage = e.target.value;
+    changeLanguage(selectedLanguage);
+});
+
 
 
 })(jQuery);
