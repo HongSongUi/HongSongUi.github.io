@@ -279,9 +279,9 @@
 		$('.mouse-icon').on('click', function(event){
 			
 			event.preventDefault();
-
+			var targetOffset = 840;
 			$('html,body').animate({
-				scrollTop: $('.goto-here').offset().top
+				scrollTop: targetOffset
 			}, 500, 'easeInOutExpo');
 			
 			return false;
