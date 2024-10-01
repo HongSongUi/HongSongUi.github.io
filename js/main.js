@@ -342,14 +342,14 @@ const translations = {
 		resume: '이력서 다운로드',
 		pr: '끝없는 도전과 배움을 통해 더 재밌는 게임을 만들고자 노력하는 개발자입니다.',
 		address_title : 'Address',
-		pr_address: '경기도 화성시 기산동'
-      /*  home: '홈',
-        about: '소개',
-        education: '학력',
-        projects: '프로젝트',
-        sideProjects: '사이드 프로젝트',
-        blog: '내 블로그',
-        contact: '연락처'*/
+		pr_address: '경기도 화성시 기산동',
+		date : '프로그래밍한 일 수',
+		university_name : "공주대학교",
+		major_name:"컴퓨터 공학",
+		University_content: "4년 간 프로그래밍에 관한 지식을 쌓고 프로젝트를 수행하며 성장하였습니다.",
+		name2 : "KGCA 게임 아카데미",
+		procedure: "게임 프로그래머 과정",
+		content2 : "게임 수학과 DirectX, Unreal Engine을 배우며 프로젝트를 통해 게임 프로그래머로서 성장하였습니다.",
     },
     jp: {
         name: 'ホン  ソンイ',
@@ -358,14 +358,14 @@ const translations = {
 		resume: '履歴書のダウンロード',
 		pr:'果てしない挑戦と学びを通じて、より楽しいゲームを作ろうと努力する開発者です。',
 		address_title : 'Nationality',
-		pr_address: '韓国'
-      /*  home: 'ホーム',
-        about: '私について',
-        education: '学歴',
-        projects: 'プロジェクト',
-        sideProjects: 'サイドプロジェクト',
-        blog: 'ブログ',
-        contact: 'コンタクト'*/
+		pr_address: '韓国',
+		date: 'プログラミングした日数',
+		university_name:"国立公州(KongJu)大学校",
+		major_name: "コンピューター工学",
+		University_content: "4年間プログラミングに関する知識を積み、プロジェクトを遂行しながら成長しました。",
+		name2 : "KGCAゲームアカデミー",
+		procedure: "ゲームプログラマーの過程",
+		content2:"ゲーム数学とDirectX、Unreal Engineを学び、プロジェクトを通じてゲームプログラマーとして成長しました。",
     }
 };
 const languageSelector = document.getElementById('language-selector');
@@ -378,6 +378,13 @@ function changeLanguage(language) {
 	document.getElementById("pr").textContent = translations[language].pr
 	document.getElementById("address_title").textContent = translations[language].address_title
 	document.getElementById("pr_address").textContent = translations[language].pr_address
+	document.getElementById("program_date").textContent = translations[language].date
+	document.getElementById("university_name").textContent = translations[language].university_name
+	document.getElementById("major_name").textContent = translations[language].major_name
+	document.getElementById("University_content").textContent = translations[language].University_content
+	document.getElementById("name2").textContent = translations[language].name2
+	document.getElementById("procedure").textContent = translations[language].procedure
+	document.getElementById("content2").textContent = translations[language].content2
 	const  rotateElement = document.getElementById('subtitle');
     rotateElement.setAttribute('data-rotate', JSON.stringify(translations[language].rotateTexts));
 	resetTxtRotate(rotateElement);

@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -41,10 +42,7 @@
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
 					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#side-projects-section" class="nav-link"><span>Side
-								Projects</span></a>
-					</li>
-					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
+
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 					<li class="nav-item">
 						<select id="language-selector" class="form-control">
@@ -133,8 +131,8 @@
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18 shadow">
 						<div class="text">
-							<strong class="number" data-number="1095">0</strong>
-							<span>코딩한 일수</span>
+							<strong class="number" data-number="1095" >0</strong>
+							<span id = "program_date">코딩한 일수</span>
 						</div>
 					</div>
 				</div>
@@ -185,26 +183,24 @@
 						<h2 class="heading">Education</h2>
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
+								<span class="icon-graduation-cap"></span>
 							</div>
 							<div class="text pl-3">
 								<span class="date">2015-2022</span>
-								<h2>コンピューター工学</h2>
-								<span class="position">KongJu National University</span>
-								<p>ComputerScienceの基礎知識を4年間しっかり積んで正しい方向に成長できるプログラマーになりました。</p>
+								<h2 id = "university_name">공주대학교</h2>
+								<span id = "major_name" class="position">컴퓨터 공학</span>
+								<p id = "University_content">4년 간 프로그래밍에 관한 지식을 쌓고 프로젝트를 수행하며 성장하였습니다.</p>
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
+								<span class="icon-graduation-cap"></span>
 							</div>
 							<div class="text pl-3">
 								<span class="date">2022-2023</span>
-								<h2>ゲームプログラマーコース</h2>
-								<span class="position">Kgca Game Academy</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-									into your mouth.</p>
+								<h2 id = "name2">KGCA 게임 아카데미</h2>
+								<span class="position" id = "procedure">게임 프로그래머 과정</span>
+								<p id = "content2">게임 수학과 DirectX, Unreal Engine을 배우며 프로젝트를 통해 게임 프로그래머로서 성장하였습니다.</p>
 							</div>
 						</div>
 						<!--<div class="resume-wrap d-flex ftco-animate">
@@ -311,18 +307,7 @@
 									</div>
 									<!-- END -->
 
-									<!-- Demo info -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div>
-									<!-- END -->
+									
 								</div>
 							</div>
 
@@ -344,19 +329,6 @@
 										</div>
 									</div>
 									<!-- END -->
-
-									<!-- Demo info -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div>
-									<!-- END -->
 								</div>
 							</div>
 
@@ -374,22 +346,9 @@
 										</span>
 										<div
 											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+											<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
 										</div>
-									</div>
-									<!-- END -->
-
-									<!-- Demo info -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div>
+									</div>								
 									<!-- END -->
 								</div>
 							</div>
@@ -400,8 +359,8 @@
 									<h3>DirectX</h3>
 									<div class="progress">
 										<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
+											aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											<span>75%</span>
 										</div>
 									</div>
 								</div>
@@ -419,29 +378,29 @@
 							</div>
 							<div class="col-md-6 animate-box">
 								<div class="progress-wrap ftco-animate">
-									<h3>HTML5</h3>
+									<h3>MFC</h3>
 									<div class="progress">
 										<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
-											aria-valuemin="0" aria-valuemax="100" style="width:95%">
-											<span>95%</span>
+											aria-valuemin="0" aria-valuemax="100" style="width:60%">
+											<span>60%</span>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 animate-box">
 								<div class="progress-wrap ftco-animate">
-									<h3>CSS3</h3>
+									<h3>C#</h3>
 									<div class="progress">
 										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
+											aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 animate-box">
 								<div class="progress-wrap ftco-animate">
-									<h3>WordPress</h3>
+									<h3>Unity</h3>
 									<div class="progress">
 										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
@@ -452,7 +411,7 @@
 							</div>
 							<div class="col-md-6 animate-box">
 								<div class="progress-wrap ftco-animate">
-									<h3>SEO</h3>
+									<h3>HLSL</h3>
 									<div class="progress">
 										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
 											aria-valuemin="0" aria-valuemax="100" style="width:80%">
@@ -465,30 +424,51 @@
 					</div>
 					<div id="page-3" class="page four">
 						<h2 id="projects-section" class="heading">Projects</h2>
+						<p>여러가지 프로젝트를 진행하며, 여러 기술 스택을 경험해왔습니다.</p>
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="flaticon-ideas"></span>
 							</div>
 							<div class="text pl-3">
-								<span class="date">2019.09-2020.08</span>
+								<span class="date">2021.04-2021.05</span>
 								<div class="d-flex">
-									<h2>웰리스 여행 상품 예약 플랫폼 개발</h2>
+									<h2 id = "game name1">타워 디펜스 게임 개발</h2>
 									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
 											class="btn btn-outline-secondary"
-											href="https://github.com/congchu/portfolio-template-2">Github</a>&nbsp;<a
-											class="btn btn-outline-secondary" target="_blank"
-											href="/images/project_1_screenshot.png">스크린샷</a>&nbsp;<a
-											class="btn btn-outline-secondary" target="_blank"
-											href="https://www.wellytravel.com/">Link</a>
+											href="https://github.com/congchu/portfolio-template-2">Github</a>&nbsp;
+											<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Game Image</a>
 									</div>
 								</div>
-								<span class="position">주식회사 더라피스</span>
-								<div> <b class="text-dark">기술 스택 : </b>React, Typescript, Next.js, Styled-Component,
-									MobX
+								<span class="position" id = "game project">개인 프로젝트</span>
+								<div> <b class="text-dark" id = "game stack1">기술 스택 : </b>Unity, C#
 								</div>
-								<div> <b class="text-dark">주요 기능 : </b> 회원 관리 및 SNS 로그인, 상품 리스트 확인, 상품 상세 정보
-									확인, 예약 관리, 결제 </div>
-								<p> React </p>
+								<div> <b class="text-dark" id = "game content1">게임 개요 : </b> 타워를 설치하고, 조합하며 7Round 동안 적을 막아내는 게임 </div>
+
+							</div>
+						</div>
+						
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2022.09-2022.10</span>
+								<div class="d-flex">
+									<h2 id = "game name1">록맨 X5(모작)</h2>
+									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Github</a>&nbsp;
+											<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Game Image</a>
+									</div>
+								</div>
+								<span class="position">개인 프로젝트</span>
+								<div> <b class="text-dark" id = "game stack2">기술 스택 : </b>DirectX, FMod, C++,
+								</div>
+								<p>록맨 X5 보스 중 다이나모와의 전투를 재현한 프로젝트</p>
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -496,13 +476,68 @@
 								<span class="flaticon-ideas"></span>
 							</div>
 							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Top 5 LeaderShip Exellence Winner</h2>
-								<span class="position">Cambridge University</span>
+								<span class="date">2022.11-2022.12</span>
+								<div class="d-flex">
+									<h2 id = "game name1">Sky Master</h2>
+									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Github</a>&nbsp;
+											<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Game Image</a>
+									</div>
+								</div>
+								<span class="position">개인 프로젝트</span>
+								<div> <b class="text-dark" id = "game stack3">기술 스택 : </b>Unreal Engine</div>
+								<p>전투기를 조종해 적의 공격을 회피하고 적을 격퇴하는 게임</p>
+							</div>
+						</div>
+						<!--<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2023.01-2023.02</span>
+								<div class="d-flex">
+									<h2 id = "game name1">Map Tool</h2>
+									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Github</a>&nbsp;
+											<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Game Image</a>
+									</div>
+								</div>
+								<span class="position">개인 프로젝트</span>
+								<div> <b class="text-dark" id = "game stack2">기술 스택 : </b>DirectX, MFC, C++
+								</div>
 								<p>A small river named Duden flows by their place and supplies it with the necessary
 									regelialia. It is a paradisematic country, in which roasted parts of sentences
 									fly
 									into your mouth.</p>
+							</div>
+						</div>-->
+						
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2023.03-2023.06</span>
+								<div class="d-flex">
+									<h2 id = "game name1">몬스터 헌터 월드(모작)</h2>
+									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Github</a>&nbsp;
+											<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Game Image</a>
+									</div>
+								</div>
+								<span class="position">팀 프로젝트</span>
+								<div> <b class="text-dark" id = "game stack2">기술 스택 : </b>Unreal Engine, C++,
+								</div>
+								<p>몬스터 헌터 월드 중 '리오레우스'라는 몬스터와의 전투를 재현한 게임</p>
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -510,27 +545,21 @@
 								<span class="flaticon-ideas"></span>
 							</div>
 							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Top 4 Web Tester</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Art &amp; Creative Director</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
+								<span class="date">2024.03-2024.06</span>
+								<div class="d-flex">
+									<h2 id = "game name1">The Battle Front</h2>
+									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Github</a>&nbsp;
+											<a class="btn btn-outline-secondary" target="_blank"
+											class="btn btn-outline-secondary"
+											href="https://github.com/congchu/portfolio-template-2">Game Image</a>
+									</div>
+								</div>
+								<span class="position">팀 프로젝트</span>
+								<div> <b class="text-dark" id = "game stack2">기술 스택 : </b>Unreal Engine, C++,
+								</div>
+								<p>슈팅 기반의 배틀로얄 게임으로 로그라이크 요소를 결합하여 만든 게임</p>
 							</div>
 						</div>
 					</div>
@@ -538,149 +567,11 @@
 			</div>
 		</div>
 	</section>
-
 
 	<section class="ftco-section ftco-project">
 		<div class="container-fluid px-md-0">
 			<div class="row no-gutters justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
-					<h2 id="side-projects-section" class="mb-4">Side Projects</h2>
-					<p>꾸준히 사이드 프로젝트를 진행하며, 다양한 분야의 기술 스택을 경험해왔습니다.</p>
-				</div>
-			</div>
-			<div class="row no-gutters">
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/side-project-1.png);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a target="_blank" href="https://qpi.kr/"> QPI - 소개팅 서비스 소개 페이지 개발</a></h3>
-							<span>UI/UX 디자인부터 웹 호스팅까지 전체 영역을 담당하였습니다.</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-2.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-3.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-4.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-5.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-6.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section" id="blog-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Blog</h1>
-					<h2 class="mb-4">My Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -692,8 +583,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
 					<h2>함께할 <span>회사를 찾는 중</span> 입니다.</h2>
-					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-					<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">연락주세요.</a></p>
+					<p class="mb-0"><a href="mailto:thddml40@gmail.com" class="btn btn-primary py-3 px-5">연락주세요.</a></p>
 				</div>
 			</div>
 		</div>
@@ -717,7 +607,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Address</h3>
-							<p>성남시 분당구 정자동</p>
+							<p>경기도 화성시 기산동</p>
 						</div>
 					</div>
 				</div>
@@ -728,7 +618,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Contact Number</h3>
-							<p><a href="tel://1234567920">+ 010 4277 1234</a></p>
+							<p>+82 10-4117-4821</p>
 						</div>
 					</div>
 				</div>
@@ -739,7 +629,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Email Address</h3>
-							<p><a href="mailto:info@yoursite.com">thddml40@gmail.com</a></p>
+							<p><a href="mailto:thddml40@gmail.com">thddml40@gmail.com</a></p>
 						</div>
 					</div>
 				</div>
