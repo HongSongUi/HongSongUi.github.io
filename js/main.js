@@ -350,6 +350,31 @@ const translations = {
 		name2 : "KGCA 게임 아카데미",
 		procedure: "게임 프로그래머 과정",
 		content2 : "게임 수학과 DirectX, Unreal Engine을 배우며 프로젝트를 통해 게임 프로그래머로서 성장하였습니다.",
+		projects_content: "여러가지 프로젝트를 진행하며, 게임 프로그래머로서 성장해왔습니다.",
+		game_name1: "타워 디펜스 게임",
+		game_name2: "록맨 X5(모작)",
+		game_name4: "몬스터 헌터 월드(모작)",
+		game_stack1 : "기술 스택 : ",
+		game_stack2 : "기술 스택 : ",
+		game_stack3 : "기술 스택 : ",
+		game_stack4 : "기술 스택 : ",
+		game_stack5 : "기술 스택 : ",
+		game_project1 : "개인 프로젝트",
+		game_project2 : "개인 프로젝트",
+		game_project3 : "개인 프로젝트",
+		game_project4 : "팀 프로젝트",
+		game_project5 : "팀 프로젝트",
+		game_content1 : "타워를 설치하고, 조합하며 7Round 동안 적을 막아내는 게임",
+		game_content2 : "록맨 X5 보스 중 다이나모와의 전투를 재현한 게임",
+		game_content3 : "전투기를 조종해 적의 공격을 회피하고 적을 격퇴하는 게임",
+		game_content4 : "몬스터 헌터 월드 중 '리오레우스' 몬스터와의 전투를 재현한 게임",
+		game_content5 : "슈팅 기반의 배틀로얄 게임으로 로그라이크 요소를 결합하여 만든 게임",
+
+		together: '함께할 <span>회사를 찾는 중</span> 입니다.',
+		call_me : "연락주세요.",
+		contect_me : "회사와 함께 성장하는 개발자가 되겠습니다. 연락주세요.",
+		address_tr : "경기도 화성시 기산동",
+
     },
     jp: {
         name: 'ホン  ソンイ',
@@ -366,6 +391,31 @@ const translations = {
 		name2 : "KGCAゲームアカデミー",
 		procedure: "ゲームプログラマーの過程",
 		content2:"ゲーム数学とDirectX、Unreal Engineを学び、プロジェクトを通じてゲームプログラマーとして成長しました。",
+		projects_content : "様々プロジェクトを通して、ゲームプログラマーとして成長しました。",
+		game_name1: "タワーディフェンスゲーム",
+		game_name2: "ロックマンX5(模作)",
+		game_name4: "モンスターハンターワールド(模作)",
+		game_stack1 : "技術スタック : ",
+		game_stack2 : "技術スタック : ",
+		game_stack3 : "技術スタック : ",
+		game_stack4 : "技術スタック : ",
+		game_stack5 : "技術スタック : ",
+		game_project1 : "個人プロジェクト",
+		game_project2 : "個人プロジェクト",
+		game_project3 : "個人プロジェクト",
+		game_project4 : "チームプロジェクト",
+		game_project5 : "チームプロジェクト",
+
+		game_content1 : "タワーを設置、組み合わせ、7Roundの間、敵を防ぐゲーム",
+		game_content2 : "ロックマンX5ボスのダイナモとの戦闘を再現したゲーム",
+		game_content3 : "戦闘機を操って敵の攻撃を回避し、敵を撃退するゲーム",
+		game_content4 : "モンスターハンターワールドの中で「リオレウス」というモンスターとの戦闘を再現したゲーム",
+		game_content5 : "シューティングベースのバトルロイヤルゲームで、ローグライク要素を組み合わせて作ったゲーム",
+
+		together: '一緒に歩く<span>会社を探して</span>います。',
+		call_me : "ご連絡ください。",
+		contect_me : "会社と共に成長する開発者になります。 連絡お待ちしています。",
+		address_tr: "Gyeonggi-do, Hwaseong-si"
     }
 };
 const languageSelector = document.getElementById('language-selector');
@@ -385,6 +435,40 @@ function changeLanguage(language) {
 	document.getElementById("name2").textContent = translations[language].name2
 	document.getElementById("procedure").textContent = translations[language].procedure
 	document.getElementById("content2").textContent = translations[language].content2
+	document.getElementById("projects_content").textContent = translations[language].projects_content
+
+	document.getElementById("game_name1").textContent = translations[language].game_name1
+	document.getElementById("game_name2").textContent = translations[language].game_name2
+	document.getElementById("game_name4").textContent = translations[language].game_name4
+	document.getElementById("game_stack1").textContent = translations[language].game_stack1
+	document.getElementById("game_stack2").textContent = translations[language].game_stack2
+	document.getElementById("game_stack3").textContent = translations[language].game_stack3
+	document.getElementById("game_stack4").textContent = translations[language].game_stack4
+	document.getElementById("game_stack5").textContent = translations[language].game_stack5
+
+	document.getElementById("game_project1").textContent = translations[language].game_project1
+	document.getElementById("game_project2").textContent = translations[language].game_project2
+	document.getElementById("game_project3").textContent = translations[language].game_project3
+	document.getElementById("game_project4").textContent = translations[language].game_project4
+	document.getElementById("game_project5").textContent = translations[language].game_project5
+
+	document.getElementById("game_content1").textContent = translations[language].game_content1
+	document.getElementById("game_content2").textContent = translations[language].game_content2
+	document.getElementById("game_content3").textContent = translations[language].game_content3
+	document.getElementById("game_content4").textContent = translations[language].game_content4
+	document.getElementById("game_content5").textContent = translations[language].game_content5
+
+	document.getElementById("address_tr").textContent = translations[language].address_tr
+
+	document.getElementById('together').innerHTML = translations[language].together;
+	
+	const callMeElement = document.getElementById('call_me');
+	const href = callMeElement.querySelector('a').getAttribute('href');  
+	callMeElement.innerHTML = `<a href="${href}" class="btn btn-primary py-3 px-5">${translations[language].call_me}</a>`;
+
+	document.getElementById("contect_me").textContent = translations[language].contect_me
+
+
 	const  rotateElement = document.getElementById('subtitle');
     rotateElement.setAttribute('data-rotate', JSON.stringify(translations[language].rotateTexts));
 	resetTxtRotate(rotateElement);
