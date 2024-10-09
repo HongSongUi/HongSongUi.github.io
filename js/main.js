@@ -367,9 +367,10 @@ const translations = {
 		game_content1 : "몬스터들이 용의 알을 훔치기 위해 쳐들어왔다! 용의 알은 7일 후면 부화하게 되며, 그때까지 적의 공격을 막아야 한다. 다양한 용과 조합을 활용해 적의 공격을 방어하고, 용의 알을 안전하게 지켜내어 부화시켜라! ",
 		game_content2 : "이 게임은 메가맨X5의 다이나모와의 전투를 재현한 작품으로, 원작의 다이나믹한 전투 스타일과 공격 패턴을 충실히 재현했습니다. 플레이어는 긴장감 넘치는 보스 전투를 경험할 수 있습니다.",
 		game_content3 : "이 게임은 언리얼 엔진을 사용하여 블루프린트만으로 제작된 전투 게임입니다. 플레이어는 파일럿이 되어 적의 미사일을 피하고, 적을 격퇴하며 전투를 수행합니다. 목표는 임무를 완수하고 무사히 항공모함으로 귀환하는 것입니다.",
-		game_content4 : "몬스터 헌터 월드 중 '리오레우스' 몬스터와의 전투를 재현한 게임",
-		game_content5 : "슈팅 기반의 배틀로얄 게임으로 로그라이크 요소를 결합하여 만든 게임",
-
+		game_content4 : "이 게임은 언리얼 엔진을 사용하여 제작된 몬스터 헌터 월드의 모작으로, 리오레우스와의 전투를 재현한 프로젝트입니다.",
+		game_content5 : "이 게임은 언리얼 엔진을 활용하여 제작된 슈팅 기반 배틀로얄 멀티플레이 게임입니다. 로그라이크 요소가 추가되어, 플레이어들은 몬스터를 처치하고 레벨을 올리며 스킬을 선택할 수 있습니다. 최종 목표는 전투에서 마지막까지 살아남아 승리하는 것입니다.",
+		screen1 : "개인 화면",
+		screen2 : "개별 플레이어 화면",
 		together: '함께할 <span>회사를 찾는 중</span> 입니다.',
 		call_me : "연락주세요.",
 		contect_me : "회사와 함께 성장하는 개발자가 되겠습니다. 연락주세요.",
@@ -409,9 +410,10 @@ const translations = {
 		game_content1 : "モンスターたちが竜の卵を盗むために打ち込んできました！ 竜の卵は7日後には孵化し、それまで敵の攻撃を防がなければなりません。 様々な龍と組み合わせで敵の攻撃を防御し、龍の卵を安全に守り孵化させましょう！",
 		game_content2 : "このゲームはロックマンX5のダイナモとの戦闘を再現した作品で、原作のダイナミックな戦闘スタイルと攻撃パターンを忠実に再現しました。 プレイヤーは緊張感あふれる戦闘を体験できます。",
 		game_content3 : "このゲームはアンリアルエンジンを使用してブループリントのみで製作された戦闘ゲームです。 プレイヤーはパイロットになり、敵のミサイルを避け、敵を撃退して戦闘を行います。 目標は任務を果たし、無事に空母に帰還することです。",
-		game_content4 : "モンスターハンターワールドの中で「リオレウス」というモンスターとの戦闘を再現したゲーム",
-		game_content5 : "シューティングベースのバトルロイヤルゲームで、ローグライク要素を組み合わせて作ったゲーム",
-
+		game_content4 : "このゲームはアンリアルエンジンを使用して製作されたモンスターハンターワールドの模作で、リオレウスとの戦闘を再現したプロジェクトです。",
+		game_content5 : "このゲームはアンリアルエンジンを活用して製作されたシューティングベースのバトルロイヤルマルチプレイゲームです。 ローグライク要素が追加され、プレイヤーはモンスターを処置し、レベルを上げることでスキルを選択できます。 最終目標は戦闘で最後まで生き残って勝利することです。",
+		screen1 : "個人画面",
+		screen2 : "個別プレーヤー画面",
 		together: '一緒に歩く<span>会社を探して</span>います。',
 		call_me : "ご連絡ください。",
 		contect_me : "会社と共に成長する開発者になります。 連絡お待ちしています。",
@@ -457,6 +459,9 @@ function changeLanguage(language) {
 	document.getElementById("game_content3").textContent = translations[language].game_content3
 	document.getElementById("game_content4").textContent = translations[language].game_content4
 	document.getElementById("game_content5").textContent = translations[language].game_content5
+
+	document.getElementById("screen1").textContent = translations[language].screen1
+	document.getElementById("screen2").textContent = translations[language].screen2
 
 	document.getElementById("address_tr").textContent = translations[language].address_tr
 
