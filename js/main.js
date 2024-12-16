@@ -339,7 +339,6 @@ const translations = {
         name: '홍송의',
         rotateTexts: ['게임 프로그래머' , '언리얼 개발자'],
 		about: 'About Me',
-		resume: '이력서 다운로드',
 		pr: '끝없는 도전과 배움을 통해 더 재밌는 게임을 만들고자 노력하는 개발자입니다.',
 		address_title : 'Address',
 		pr_address: '경기도 화성시 기산동',
@@ -381,7 +380,6 @@ const translations = {
         name: 'ホン  ソンイ',
         rotateTexts: ['ゲームプログラマー', 'アンリアル開発者'],
 		about: '私について',
-		resume: '履歴書のダウンロード',
 		pr:'終わりなき挑戦と学びを通じて、より楽しいゲームを作ろうと努力する開発者です。',
 		address_title : 'Nationality',
 		pr_address: '韓国',
@@ -426,7 +424,6 @@ function changeLanguage(language) {
     document.getElementById('name').textContent = translations[language].name;
 	document.getElementById("pr_name").textContent = translations[language].name
 	document.getElementById("about").textContent = translations[language].about
-	document.getElementById("resume").textContent = translations[language].resume
 	document.getElementById("pr").textContent = translations[language].pr
 	document.getElementById("address_title").textContent = translations[language].address_title
 	document.getElementById("pr_address").textContent = translations[language].pr_address
